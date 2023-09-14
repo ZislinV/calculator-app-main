@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=League+Spartan:wght@700&family=Montserrat:wght@700&display=swap");
+
+* {
+  font-family: "League Spartan";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(222, 26%, 31%);
+  height: 100vh;
+  font-size: 32px;
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 450px;
+  text-align: center;
+}
+
+/* //////////////Header//////////////// */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 30px 0;
+}
+
+h4 {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.themeBox {
+  display: flex;
+  align-items: end;
+}
+
+.themeBox > span {
+  font-size: 10px;
+  margin-right: 20px;
+  margin-bottom: 4px;
+}
+
+/* //////////////checkbox themes/////////////// */
+
+.checkboxTheme {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1.2fr 0.8fr;
+  width: 50px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  align-items: end;
+}
+
+.checkboxTheme input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.checkboxTheme .checkmark {
+  position: relative;
+  width: 50px;
+  height: 18px;
+  border-radius: 11px;
+  background: hsl(223, 31%, 20%);
+  transition: color 0.25s ease;
+  grid-column: 1/4;
+  justify-self: end;
+}
+
+.checkboxTheme .checkmark:after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: hsl(6, 63%, 50%);
+  transition: left 0.25s ease;
+}
+
+.checkboxTheme .checkmark2:after {
+  left: 20px;
+  background: hsl(25, 98%, 40%);
+}
+
+.checkboxTheme .checkmark3:after {
+  left: 35px;
+  background: hsl(176, 100%, 44%);
+}
+
+/* //////////////Show box//////////////// */
+
+.show {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: hsl(224, 36%, 15%);
+  height: 40px;
+  border-radius: 10px;
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 25px;
+  overflow: hidden;
+}
+
+/* //////////////Calc body//////////////// */
+
+.bodyCalc {
+  display: grid;
+  background-color: hsl(223, 31%, 20%);
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 55px);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+button {
+  border-radius: 6px;
+  background-color: hsl(30, 25%, 89%);
+  border: none;
+  font-size: 21px;
+  color: hsl(221, 14%, 31%);
+  font-size: 32px;
+  box-shadow: inset 0 -3px 0 hsl(28, 16%, 65%);
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: hsl(0, 0%, 100%);
+}
+
+.reset {
+  grid-column: 1 / span 2;
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+  box-shadow: inset 0 -3px 0 hsl(224, 28%, 35%);
+}
+
+.reset:hover {
+  background: hsl(224, 28%, 60%);
+}
+
+.equality {
+  grid-column: 3 / span 2;
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+  box-shadow: inset 0 -3px 0 hsl(6, 70%, 34%);
+}
+
+.equality:hover {
+  background: hsl(6, 63%, 60%);
+}
+
+.del {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+  box-shadow: inset 0 -3px 0 hsl(224, 28%, 35%);
+}
+
+.del:hover {
+  background: hsl(224, 28%, 60%);
+}
+
+/* /////////////// Theme2 ///////////// */
+.body2 {
+  background-color: hsl(0, 0%, 90%);
+  color: hsl(60, 10%, 19%);
+}
+.bodyCalc2 {
+  background: hsl(0, 5%, 81%);
+}
+.show2 {
+  background-color: hsl(0, 0%, 93%);
+}
+.button2 {
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: inset 0 -3px 0 hsl(35, 11%, 61%);
+  color: hsl(60, 10%, 19%);
+}
+
+.resetAndDel2 {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: inset 0 -3px 0 hsl(185, 58%, 25%);
+}
+.equality2 {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: inset 0 -3px 0 hsl(25, 99%, 27%);
+}
+
+.button2:hover {
+  background: hsl(0, 0%, 100%);
+}
+
+.resetAndDel2:hover {
+  background: hsl(185, 42%, 50%);
+}
+.equality2:hover {
+  background: hsl(25, 98%, 60%);
+}
+
+/* /////////////// Theme3 ///////////// */
+
+.body3 {
+  background-color: hsl(268, 75%, 9%);
+  color: hsl(52, 100%, 62%);
+}
+.bodyCalc3 {
+  background: hsl(268, 71%, 12%);
+}
+.show3 {
+  background-color: hsl(268, 71%, 12%);
+}
+.button3 {
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: inset 0 -3px 0 hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+
+.resetAndDel3 {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: inset 0 -3px 0 hsl(285, 91%, 52%);
+}
+.equality3 {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: inset 0 -3px 0 hsl(177, 92%, 70%);
+  color: hsl(268, 75%, 9%);
+}
+
+.button3:hover {
+  background: hsl(268, 47%, 40%);
+}
+
+.resetAndDel3:hover {
+  background: hsl(281, 89%, 50%);
+}
+.equality3:hover {
+  background: hsl(176, 100%, 60%);
+}
+
+/* ///////////////"media"//////////////*/
+
+@media (max-width: 500px) {
+  .container {
+    width: 340px;
+  }
+
+  .bodyCalc {
+    gap: 12px;
+    grid-template-rows: repeat(5, 61px);
+  }
+}
