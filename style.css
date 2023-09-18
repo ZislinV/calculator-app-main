@@ -268,8 +268,7 @@ button {
 
   .bodyCalc {
     gap: 12px;
-    background-color: red;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+
     grid-template-rows: repeat(5, 61px);
   }
 }
