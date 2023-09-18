@@ -124,7 +124,9 @@ h4 {
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 55px);
-  padding: 30px;
+  padding: 5%;
+  /* padding: 30px; */
+
   border-radius: 10px;
 }
 
