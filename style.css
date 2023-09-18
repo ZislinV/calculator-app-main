@@ -262,13 +262,8 @@ button {
     width: 340px;
   }
 
-  /* .bodyCalc {
-    display: grid;
-  } */
-
   .bodyCalc {
     gap: 12px;
-
     grid-template-rows: repeat(5, 61px);
   }
 }
