@@ -264,14 +264,12 @@ button {
     margin: 5%;
   }
 
-  .container {
-    height: auto;
-    /* width: 340px; */
-  }
+  /* .container {
+    width: 340px;
+  } */
 
   .bodyCalc {
     gap: 12px;
-    grid-template-columns: repeat(4 1fr);
     grid-template-rows: repeat(5, 61px);
   }
 }
