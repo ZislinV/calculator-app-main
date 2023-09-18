@@ -257,7 +257,7 @@ button {
 
 /* ///////////////"media"//////////////*/
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container {
     width: 340px;
   }
@@ -268,8 +268,8 @@ button {
 
   .bodyCalc {
     gap: 12px;
-
-    grid-template-columns: repeat(5, 1fr);
+    background-color: red;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(5, 61px);
   }
 }
