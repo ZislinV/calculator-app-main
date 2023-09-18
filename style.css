@@ -263,8 +263,8 @@ button {
   }
 
   .bodyCalc {
-    display: grid;
     gap: 12px;
+    grid-template-columns: repeat(4, 20%);
     grid-template-rows: repeat(5, 61px);
   }
 }
